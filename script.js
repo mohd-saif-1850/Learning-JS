@@ -160,3 +160,28 @@ console.log(arrowFunc2(1,5));
 })() 
 */
 
+// IF-ELSE Statements
+
+/* let num1 = 10; // Here i use hard-coded values because I know all about the statements and also 'prompt()' not working in node environment.
+let num2 = 20;
+if(num2>num1){
+    // console.log(`${num2} is greater than ${num1}.`);
+}
+else{
+    // console.log(`${num1} is greater than ${num2}.`);
+}
+
+// Now I Am Using HTML for taking Values
+
+const num1 = document.getElementById("num1")
+const num2 = document.getElementById("num2")
+const cal = document.getElementById("add")
+
+let value = 0;
+cal.addEventListener('click', () => {
+    value = Number(num1.value) + Number(num2.value)
+    console.log(value);
+})
+
+*/
+
