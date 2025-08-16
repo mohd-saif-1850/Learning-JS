@@ -8,6 +8,7 @@ console.log(arr)
 console.log(arr.splice(0,4));
 console.log(arr) */
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Objects
 
@@ -63,6 +64,8 @@ console.log(myObj.name);
 
 */
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 // Now from here I am starting the Functions in JS
 
 /* function add(num1,num2){
@@ -82,7 +85,7 @@ const msg = loggedIn()
 console.log(msg);
 */
 
-
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Lets make an array using HTML and JS
 
@@ -106,11 +109,11 @@ if(arr.length > 0){
 }
 }) */
 
-
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // THIS and Arrow Function
 
-const obj = {
+/* const obj = {
     name: "Saif",
     age:18,
 
@@ -136,3 +139,24 @@ console.log(arrowFunc1(2,8));
 // Syntax 2, Here we dont have to use return keyword fo return the value
 const arrowFunc2 = (num1, num2) => (num1 + num2)
 console.log(arrowFunc2(1,5));
+*/
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// IIFE (Immediately Invoked Function Expression )
+
+// IIFE have one of the best syntax just use ()() thats it
+
+// Syntax 1
+
+/* (function iife(){
+    // We call This function or IIFE as Named IIFE
+    console.log(`This is the IIFE Using Normal Function.`); // We can also use "Double or Single Quotes" but now here i want to start using ``
+    
+})(); // Always Use ; In the End 
+
+// Syntax 2-- We can use with or without variable
+( () => {
+    console.log(`This is IIFE Using Call Back Function`);
+    
+})() 
+*/
+
