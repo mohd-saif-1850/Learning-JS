@@ -105,7 +105,7 @@ console.log(newArr);
 if(arr.length > 0){
     const li = document.createElement("li")
     li.textContent = add.value
-    list.appendChild(li)
+    list.appendChild(li) // Kuch toh Gadbad Hai is Code Main
 }
 }) */
 
