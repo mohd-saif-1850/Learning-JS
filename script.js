@@ -185,3 +185,115 @@ cal.addEventListener('click', () => {
 
 */
 
+// FOR, WHILE, DO-WHILE LOOP
+
+// I really prefare to use For loop so i only talk about for loop and dont care about while and do-while loop
+
+// Syntax
+/* for(let i=0;i<5;i++){
+    console.log(i);
+} // I know almost everything about loop even i completed so much projects which includes loop so i dont want to rewrite everything again and again
+*/
+
+// For-Of Loop
+
+/* const arr = ["I","Am","The","One"]
+for(const element of arr){
+    console.log(element);
+}
+*/
+
+// Map ( A new and Intresting Keyword or Method to create objects or arrays )
+
+/* const obj = new Map();
+
+obj.set('Name', 'Saif')
+obj.set('Age', 18)
+obj.set('Langauge', 'JS')
+
+for(const [key,value] of obj){//If we use only key in place of [key,value] we get 👇
+    // console.log(key); // It prints the whole array or you can call it an object also
+    console.log(`${key} :- ${value}`);
+} */
+
+// Can we directly use For-OF loop in objects let's try
+
+
+/* const obj = {
+    name : 'Saif',
+    age : 18,
+    language: 'JS'
+}
+console.log(typeof(obj));
+
+for(const element of obj){
+    console.log(element); // So it can't be Iterate using For-Of Loop
+    
+}
+*/
+
+// For-In Loop
+// This loop is not works in Map()
+/* const obj = {
+    js : "JavaScript",
+    py : "Python",
+}
+
+for(const key in obj){
+    console.log(`${key} :- ${obj[key]}`);
+    
+}
+
+const arr = ['Trying','Something']
+
+for(const element in arr){
+    console.log(`Elements at Index ${element} is ${arr[element]}.`);
+}*/
+
+// For-Each Loop
+
+/* const arr = ['python', 'js','cpp','c','react']
+
+arr.forEach(element => {
+    // console.log(element); 
+})
+
+const objArr = [
+    {
+        name : 'Saif',
+        age : 18,
+    },
+    {
+        language : 'JS',
+        full_name : 'JavaScript',
+    },
+    {
+        environment : 'nodeJs',
+    }
+]
+
+objArr.forEach(element => {
+    console.log(element.name,element.age,element.environment);
+    
+})
+*/
+
+// Filter
+
+const nums = [2,4,5,3,9]
+// Simple Work of Filter
+nums.filter((element,index,arr) => {
+    if(element>4){
+        console.log(`${element} at ${index} in Array ${arr}.`);
+    }
+})
+
+
+const movies = [
+  { title: "Inception", year: 2010, rating: 8.8 },
+  { title: "Interstellar", year: 2014, rating: 8.6 },
+  { title: "The Dark Knight", year: 2008, rating: 9.0 },
+  { title: "Tenet", year: 2020, rating: 7.4 },
+  { title: "Dunkirk", year: 2017, rating: 7.9 },
+  { title: "The Prestige", year: 2006, rating: 8.5 }
+];
