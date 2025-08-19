@@ -271,8 +271,8 @@ const objArr = [
         environment : 'nodeJs',
     }
 ]
-
-objArr.forEach(element => {
+ // For-Each never return the value
+objArr.forEach(element => { 
     console.log(element.name,element.age,element.environment);
     
 })
@@ -280,11 +280,11 @@ objArr.forEach(element => {
 
 // Filter
 
-const nums = [2,4,5,3,9]
+/* const nums = [2,4,5,3,9]
 // Simple Work of Filter
 nums.filter((element,index,arr) => {
     if(element>4){
-        console.log(`${element} at ${index} in Array ${arr}.`);
+        // console.log(`${element} at ${index} in Array ${arr}.`);
     }
 })
 
@@ -297,3 +297,50 @@ const movies = [
   { title: "Dunkirk", year: 2017, rating: 7.9 },
   { title: "The Prestige", year: 2006, rating: 8.5 }
 ];
+
+const rating = movies.filter((userRating) => {
+    return userRating.rating >= 8 && userRating.year > 2010;
+})
+console.log(rating); */
+
+// Map
+
+/* const arr = [3,4,5,2,4]
+
+const newArr = arr.map(element => element+10)
+console.log(newArr);
+console.log(arr);
+*/
+
+// Reducer
+
+/* const arr = [1,2,3,4,5,9]
+const initial = 0
+const sum = arr.reduce((num1,num2) => {
+    console.log(num1,'+',num2);
+    return num1+num2;
+},initial)
+console.log(sum); */
+
+const arr = [
+    {
+        item : 'Basketball',
+        price : 300
+    },
+    {
+        item : 'Net',
+        price : 100
+    },
+    {
+        item : 'Shoes',
+        price : 1299
+    },
+]
+
+const totalPrice = arr.reduce((current,add) => {
+    console.log(current , '+' ,add.price);
+    
+    return current + add.price;
+},0)
+
+console.log(totalPrice);

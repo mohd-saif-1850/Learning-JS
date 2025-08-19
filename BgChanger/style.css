@@ -1,0 +1,41 @@
+body{
+    background-color: #212121;
+    color:#fff;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    margin-bottom: -20px;
+}
+h3{
+    color: grey;
+}
+
+button{
+    width: 40%;
+    height: 20%;
+    border-radius: 20px; 
+    cursor:pointer;
+    margin: 5px;
+    outline: none;
+    border: 1px solid yellow;
+}
+button:hover{
+    opacity: 70%;
+}
+.white{
+    background-color: white;
+    color: black;
+}
+.grey{
+    background-color: grey;
+    color: white;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+.red{
+    background-color: red;
+    color: white;
+}
